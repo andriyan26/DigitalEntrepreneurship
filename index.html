@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMELTRIFTING</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer-when-downgrade">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container p-0 mb-5 mt-5 rounded-3 shadow bg-white">
+    <!-- Menu -->
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="FotoTrip/T-removebg-preview.png" alt="Logo JKONEKCAR" class="logo-img">
+                    <div class="logo"></div>
+                    <h1>Timel<b>Trifting</b></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Favorite">Favorite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#PesanKesan">Pesan/Kesan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Tentang-Kami">Tentang Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success me-2" type="button">Sign in</button>
+                    <button class="btn btn-success" type="button">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="px-2 mb-2 mt-2">
+        <div class="video-container px-2 mb-2 mt-2">
+            <video controls autoplay loop muted class="video-frame" style="width: 320px; height: auto;">
+                <source src="FotoTrip/WhatsApp Video 2024-10-15 at 13.12.03.mp4" type="video/mp4">
+            </video>
+        </div> 
+    </div>
+    <!-- Catalog -->
+    <section id="Menu" class="px-4 py-4 bg-light text-center">
+        <div class="container p-0 mb-5 mt-5 rounded-3 shadow bg-black">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4 bg-white">Menu</h3>
+                    <p class="text-center bg-white ">Selamat datang di tempat di mana fashion bertemu keberlanjutan! Kami hadir dengan koleksi baju thrift yang dirancang untuk memberi Anda pilihan yang stylish dan ramah lingkungan. Setiap item dalam koleksi kami memiliki cerita dan karakter tersendiri, menciptakan gaya yang tidak akan Anda temukan di tempat lain.</p>
+                </div>
+            </div>
+            <div class="row row-cols-md-3 row-cols-1 gx-5 p-5">
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto1_1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">BROYLYN Versite</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp.300.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Lamborghini Aventador">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V12</p>
+                            <p>Tenaga : Tergantung pada model, bisa mencapai lebih dari 700 hingga 800+ tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 2.9 hingga 3.0 detik</p>
+                            <p>Desain : Ikonik dengan garis-garis agresif dan aerodinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/6285888328024" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/invites/contact/?igsh=1rths9voq60i8&utm_content=w4hvkmj" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto2_1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Adidas Versite</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 295.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Lamborghini Aventador">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V12</p>
+                            <p>Tenaga : Tergantung pada model, bisa mencapai lebih dari 700 hingga 800+ tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 2.7 hingga 3.0 detik</p>
+                            <p>Desain : Ikonik dengan garis-garis agresif dan aerodinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto3 (1).jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Adidas Grey</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 310.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Ferrari 488 GTB">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 661 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.0 detik</p>
+                            <p>Desain : Elegan dengan garis-garis yang dinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto4 (1).jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Uniqlo Versite</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 337.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Porsche 911">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : Flat-Six</p>
+                            <p>Tenaga : Bervariasi tergantung pada model</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.0 detik</p>
+                            <p>Desain : Klasik dengan ciri khas lampu belakang bundar</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto5.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Hoodie Parachute Uniqlo</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 350.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Ferrari 488 GTB">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 661 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.0 detik</p>
+                            <p>Desain : Elegan dengan garis-garis yang dinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto6.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Pocketable Parka Uniqlo</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 330.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Ferrari 488 GTB">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 661 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.0 detik</p>
+                            <p>Desain : Elegan dengan garis-garis yang dinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto7.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Jaket Kulit Uniqlo</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 400.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Ferrari 488 GTB">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 661 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.0 detik</p>
+                            <p>Desain : Elegan dengan garis-garis yang dinamis</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto8 (1).jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Celana Versite Uniqlo</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 325.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="BMW M5">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 600 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.2 detik</p>
+                            <p>Desain : Sporty dengan sentuhan mewah</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto9 (1).jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Celana Versite Brown Uniqlo</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 300.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="BMW M5">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 600 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.2 detik</p>
+                            <p>Desain : Sporty dengan sentuhan mewah</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto10.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Evisu Veriste</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 275.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="BMW M5">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 600 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.2 detik</p>
+                            <p>Desain : Sporty dengan sentuhan mewah</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto11.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Jaket Versite Blue</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 200.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="BMW M5">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V8 Twin-Turbo</p>
+                            <p>Tenaga : Sekitar 600 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.2 detik</p>
+                            <p>Desain : Sporty dengan sentuhan mewah</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto12.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">BEPLYEL Veriste</p>
+                            <button class="btn btn-sm btn-primary d-block btn-deskripsi">Harga : Rp. 255.000</button>
+                            <button class="btn btn-sm btn-success d-block mt-2 btn-beli" data-produk="Audi R8">Beli Sekarang</button>
+                        </div>
+                        <div class="deskripsi d-none">
+                            <p>Mesin : V10</p>
+                            <p>Tenaga : Sekitar 562 tenaga kuda</p>
+                            <p>Akselerasi 0-100 km/jam : Sekitar 3.2 detik</p>
+                            <p>Desain : Futuristik dengan gril khas Audi</p>
+                        </div>
+                        <!-- Tambahkan Logo IG dan WA di bawah tombol Beli Sekarang -->
+                        <div class="social-links">
+                            <a href="https://wa.me/nomor_whatsapp_anda" target="_blank" class="whatsapp-link"></a>
+                            <a href="https://www.instagram.com/username_anda" target="_blank" class="instagram-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Favorite -->
+    <section id="Favorite" class="px-4 py-4 bg-light text-center">
+        <div class="container p-0 mb-5 mt-5 rounded-3 shadow bg-black">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4 bg-white">Favorite</h3>
+                    <p class="text-center bg-white">Berikut adalah beberapa favorit pelanggan kami.</p>
+                </div>
+            </div>
+            <div class="row row-cols-md-3 row-cols-1 gx-5 p-5">
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto1_1.jpg" class="rounded-circle card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">BROYLYN Versite</p>
+                            <p>Harga : Rp. 300.000</p>
+                            <p>Deskripsi: Jaket ini memiliki desain yang stylish dan cocok untuk berbagai kesempatan. Dikenal dengan kualitas bahan yang baik dan nyaman dipakai.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto7.jpg" class="rounded-circle card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Jaket Kulit Uniqlo</p>
+                            <p>Harga : Rp. 400.000</p>
+                            <p>Vest dengan desain modern yang memberikan kenyamanan. Ideal untuk aktivitas luar ruangan atau cuaca dingin.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="col mb-5">
+                    <div class="card shadow">
+                        <img src="FotoTrip/Foto10.jpg" class="rounded-circle card-img-top" />
+                        <div class="card-body">
+                            <p class="card-text">Evisu Veriste</p>
+                            <p>Harga : Rp. 275.000</p>
+                            <p>Vest ini cocok untuk penggunaan sehari-hari atau saat berolahraga. Terbuat dari material yang ringan dan breathable.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <!-- You can add more favorite products here -->
+            </div>
+        </div>
+    </section>
+    <!-- Pesan dan Kesan -->
+    <section id="PesanKesan" class="px-4 py-4 bg-light text-center">
+        <div class="container p-0 mb-5 mt-5 rounded-3 shadow bg-white">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4">Pesan dan Kesan</h3>
+                    <p class="text-center">Berikan pesan dan kesan Anda tentang layanan kami.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form id="formPesanKesan">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan/Kesan</label>
+                            <textarea class="form-control" id="pesan" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tentang Kami -->
+    <section id="Tentang-Kami" class="px-4 py-4 bg-light text-center">
+        <div class="container p-0 mb-5 mt-5 rounded-3 shadow bg-black">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4 bg-white">Tentang Kami</h3>
+                    <img src="FotoTrip/Bck1.jpg" class="img-fluid mb-4" alt="Gambar Tentang Kami">
+                    <p class="text-center bg-white">Dengan semangat menciptakan pilihan yang lebih baik untuk masa depan, kami dengan cermat memilih setiap item dalam koleksi kami, memastikan bahwa Anda mendapatkan pakaian berkualitas tinggi dengan harga yang terjangkau. Kami mengutamakan keunikan dan keaslian, memberikan Anda kesempatan untuk mengekspresikan diri melalui fashion yang tidak pasaran. Kami berkomitmen untuk mendukung gerakan fashion berkelanjutan dan mengurangi limbah tekstil dengan menawarkan pilihan yang stylish dan ramah lingkungan. Bergabunglah dengan kami dalam perjalanan ini dan temukan gaya yang mencerminkan kepribadian Anda sambil berkontribusi untuk menjaga bumi kita!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Konfirmasi Pembelian -->
+    <div class="container py-5 d-none" id="konfirmasiPembelian">
+        <h1 class="text-center mb-4">Konfirmasi Pembelian</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Terima kasih!</h5>
+                <p class="card-text">Pembelian Anda berhasil dikonfirmasi.</p>
+                <p class="card-text">Anda telah membeli <strong id="productName"></strong>.</p>
+                <p class="card-text">Silakan lengkapi pembayaran di bawah ini:</p>
+                <!-- Formulir Pembayaran -->
+                <form id="formPembayaran">
+                    <div class="mb-3">
+                        <label for="namaPembeli" class="form-label">Nama Pembeli</label>
+                        <input type="text" class="form-control" id="namaPembeli" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomorKartu" class="form-label">Nomor Kartu</label>
+                        <input type="text" class="form-control" id="nomorKartu" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tanggalKadaluarsa" class="form-label">Nama Barang</label>
+                        <input type="text" class="form-control" id="tanggalKadaluarsa" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="kodeCVV" class="form-label">Tanggal Pembayaran</label>
+                        <input type="text" class="form-control" id="kodeCVV" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Bayar</button>
+                </form>
+                <a href="#" class="btn btn-secondary mt-3" id="batalkanPembelian">Batalkan</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer py-3 bg-dark text-white text-center">
+        <div class="container">
+            <span class="text-muted">SHOWROOMCAR &copy; 2024</span>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-6CVbXkPflR7apNvrX3+9BjCWjU4ymT3Z8edZ1Ee+kjxjv4/Kir29j4aXJPmICkY2S+ALzq/ufdEaT5n3z1XtIg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Csv4MTswcFCWybyyUMkHXYdzcyB+UVFm8kbgj4H2RJOlk1pmwlczS3V9B4I3I5pb" crossorigin="anonymous" defer></script>
+<script>
+    // Menggunakan JavaScript untuk menangani klik tombol "Beli Sekarang"
+    const beliButtons = document.querySelectorAll('.btn-beli');
+    beliButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const productName = button.getAttribute('data-produk');
+            document.getElementById('productName').textContent = productName;
+            document.getElementById('konfirmasiPembelian').classList.remove('d-none');
+        });
+    });
+
+    // Menangani pembayaran saat formulir pembayaran disubmit
+    const formPembayaran = document.getElementById('formPembayaran');
+    formPembayaran.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Tambahan logika untuk memproses pembayaran, misalnya dengan AJAX
+        alert('Pembayaran berhasil! Terima kasih telah berbelanja.');
+    });
+
+    // Menangani pembatalan pembelian
+    const batalkanPembelian = document.getElementById('batalkanPembelian');
+    batalkanPembelian.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('konfirmasiPembelian').classList.add('d-none');
+    });
+
+    // Menggunakan JavaScript untuk menampilkan deskripsi produk
+    const deskripsiButtons = document.querySelectorAll('.btn-deskripsi');
+    deskripsiButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const deskripsi = button.nextElementSibling;
+            deskripsi.classList.toggle('d-none');
+        });
+    });
+
+    // Menangani pengiriman pesan/kesan
+    const formPesanKesan = document.getElementById('formPesanKesan');
+    formPesanKesan.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nama = document.getElementById('nama').value;
+        const pesan = document.getElementById('pesan').value;
+        // Anda dapat menambahkan logika untuk mengirim pesan/kesan ke server di sini
+        alert('Terima kasih atas pesan dan kesan Anda!');
+        // Setelah pengiriman berhasil, Anda dapat membersihkan formulir jika diinginkan:
+        // formPesanKesan.reset();
+    });
+</script>
+</body>
+</html>

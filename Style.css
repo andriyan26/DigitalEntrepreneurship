@@ -1,0 +1,335 @@
+/* Background */
+.bg-secondary {
+  background: url('GambarM/JS.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('FotoTrip/Bck1.jpg');
+  background-color: #f0f0f0; /* Penambahan warna latar belakang */
+}
+
+/* Header Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #ffffff;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo h1 {
+  color: #fff;
+  background: #ff5733;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #ff5733;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #ff8c66;
+}
+
+.signin,
+.signup {
+  padding: 5px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin:hover,
+.signup:hover {
+  background-color: #ff8c00;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+}
+
+/* Catalog */
+#Menu {
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('GambarM/Link1.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover:before {
+  opacity: 0.8;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.btnDetail {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5733;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.btnDetail:hover {
+  background-color: #ff8c66;
+}
+
+.harga {
+  color: #ff5733;
+  font-weight: bold;
+}
+
+/* Tentang Kami */
+#AboutUs {
+  padding: 20px;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer */
+.border-top {
+  margin-top: 50px;
+  padding-top: 20px;
+  color: #333;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+/* Favorite */
+.content {
+  padding: 20px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.content .content-left,
+.content .content-right {
+  display: block;
+  width: 100%;
+}
+
+.content .content-left img,
+.content .content-right img {
+  width: 250px;
+  height: auto;
+  position: relative;
+  user-select: none;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form Styles */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container h3 {
+  text-align: center;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.switch a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.switch a:hover {
+  color: #45a049;
+}
+
+video {
+  width: 50%; /* Mengatur lebar video menjadi 50% dari lebar kontainer */
+  height: auto; /* Menyesuaikan tinggi video secara otomatis sesuai dengan aspek rasio */
+}
+.navbar-brand {
+  display: flex; /* Menggunakan Flexbox */
+  align-items: center; /* Mengatur elemen secara vertikal ke tengah */
+}
+.logo-img {
+  width: 100px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  margin-left: 10px;
+  /* Anda juga bisa menambahkan properti lain seperti height atau max-width */
+}
+
+.video-container {
+  position: relative; /* Memastikan posisi relatif untuk child elements */
+  overflow: hidden; /* Mengatur overflow agar sesuai dengan container */
+  border-radius: 20px; /* Bentuk bingkai video */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk bingkai */
+  padding: 10px; /* Ukuran bingkai video */
+  display: flex; /* Menggunakan flexbox */
+  justify-content: center; /* Mengatur posisi horizontal ke tengah */
+  align-items: center; /* Mengatur posisi vertikal ke tengah */
+}
+/* CSS untuk elemen video */
+.video-frame {
+  width: 70%; /* Mengisi lebar container */
+  border-radius: 20px; /* Bentuk bingkai video */
+}
+
+.img-fluid {
+  width: 20%; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar disesuaikan agar tetap proporsional */
+  max-width: 50%; /* Pastikan gambar tidak melebihi lebar parent container */
+}
+
+.social-links {
+  display: flex; /* Menggunakan flexbox untuk tata letak yang lebih baik */
+  justify-content: center; /* Memusatkan logo */
+  align-items: center; /* Menjaga logo tetap vertikal sejajar */
+  margin-top: 10px; /* Ruang atas untuk jarak */
+}
+.social-links {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: center; /* Memusatkan logo */
+  align-items: center; /* Menjaga logo tetap vertikal sejajar */
+  margin-top: 10px; /* Ruang atas untuk jarak */
+}
+
+.whatsapp-link {
+  width: 24px; /* Ukuran logo */
+  height: 24px; /* Ukuran logo */
+  background-image: url('FotoTrip/WA-removebg-preview.jpg'); /* Gambar WhatsApp */
+  background-size: contain; /* Menjaga proporsi gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  display: inline-block; /* Agar elemen bisa memiliki ukuran */
+  margin: 0 5px; /* Jarak antara logo */
+}
+
+.instagram-link {
+  width: 24px; /* Ukuran logo */
+  height: 24px; /* Ukuran logo */
+  background-image: url('FotoTrip/IG-removebg-preview.jpg'); /* Gambar Instagram */
+  background-size: contain; /* Menjaga proporsi gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  display: inline-block; /* Agar elemen bisa memiliki ukuran */
+  margin: 0 5px; /* Jarak antara logo */
+}
+
